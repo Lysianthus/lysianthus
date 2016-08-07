@@ -1,0 +1,48 @@
+// Fonts
+
+@font-face {
+	font-family: 'Heading Font';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../fonts/Serendipity Script.woff') format('woff');
+}
+
+$fontDefault: 'Courier New', monospace;
+$fontHeading: 'Serendipity Script', cursive;
+
+
+// Colors
+
+$violet: #8d4e85;
+$brown: #a5694f;
+
+$gray: #999;
+$bggray: #DDD;
+
+$white: #FFF;
+$black: #000;
+
+
+// Reusable Classes
+
+%relative-zero {
+	margin: 0;
+	padding: 0;
+}
+
+%clearfix {
+	@extend %relative-zero;
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+// Mixins
+
+@mixin font($name, $weight, $style, $size) {
+	font-family: $name;
+	font-weight: $weight;
+	font-style: $style;
+	font-size: $size;
+}

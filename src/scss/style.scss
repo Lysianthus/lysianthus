@@ -1,0 +1,72 @@
+@import "_config.scss";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+html {
+	font-size: 125%;
+}
+
+body {
+	padding: 0 5%;
+	background: linear-gradient(to bottom right, $violet, $brown);
+	@include font($fontDefault, normal, normal, 1rem);
+}
+
+.container {
+	margin: 100px auto;
+	padding: 50px;
+	width: 600px;
+	max-width: 100%;
+	background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.5));
+	border-radius: 10px;
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	@include font($fontHeading, normal, normal, 3rem);
+	text-align: center;
+	color: $violet;
+}
+
+.description {
+	margin: 1em 0;
+	padding: 0;
+	@include font($fontDefault, normal, normal, 1rem);
+	line-height: 1.5;
+}
+
+.heading {
+	margin: 2em 0 1em;
+	padding: 0;
+	@include font($fontDefault, bold, normal, 1.25rem);
+	//text-align: center;
+	text-transform: uppercase;
+	color: $brown;
+}
+
+a {
+	border-bottom: $brown 1px solid;
+	text-decoration: none;
+	color: $violet;
+}
+
+.links {
+	margin: 1em 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+.links__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
