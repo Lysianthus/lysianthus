@@ -1,5 +1,3 @@
-src/*
-!src/fonts
-!src/scss
+src/.sass-cache
 *.ini
 *.db
