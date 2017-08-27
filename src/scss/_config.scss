@@ -1,24 +1,52 @@
-// Fonts
+@import "crayon.scss";
 
 @font-face {
-	font-family: 'Serendipity Script';
+	font-family: 'Agent';
 	font-weight: normal;
-	font-style: italic;
-	src: url('../fonts/Serendipity Script.woff') format('woff');
-	font-display: swap;
+	font-style: normal;
+	src: url('../fonts/Agent.woff') format('woff');
 }
 
-$fontDefault: 'Courier New', monospace;
-$fontHeading: 'Serendipity Script', cursive;
+@font-face {
+	font-family: 'Mononoki';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/mononoki-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mononoki';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/mononoki-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mononoki';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../fonts/mononoki-Italic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mononoki';
+	font-weight: bold;
+	font-style: italic;
+	src: url('../fonts/mononoki-BoldItalic.woff') format('woff');
+}
+
+// Fonts
+
+$fontDefault: 'Mononoki', serif;
+$fontHeading: 'Agent', sans-serif;
 
 
 // Colors
 
-$violet: #8d4e85;
-$brown: #a5694f;
+
 
 $gray: #999;
-$bggray: #DDD;
+$lightgray: #DDD;
 
 $white: #FFF;
 $black: #000;
@@ -26,13 +54,9 @@ $black: #000;
 
 // Reusable Classes
 
-%relative-zero {
+%clearfix {
 	margin: 0;
 	padding: 0;
-}
-
-%clearfix {
-	@extend %relative-zero;
 	content: '';
 	display: table;
 	clear: both;

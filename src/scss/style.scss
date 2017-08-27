@@ -1,5 +1,8 @@
 @import "_config.scss";
 
+
+/* reset */
+
 *, *:before, *:after {
 	box-sizing: border-box;
 }
@@ -7,66 +10,170 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	min-height: 100%;
-}
-
-html {
-	font-size: 125%;
+	@include font($fontDefault, normal, normal, 1rem);
 }
 
 body {
-	padding: 0 5%;
-	background: linear-gradient(to bottom right, $violet, $brown);
-	@include font($fontDefault, normal, normal, 1rem);
-}
-
-.container {
-	margin: 100px auto;
-	padding: 50px;
-	width: 600px;
-	max-width: 100%;
-	background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.5));
-	border-radius: 10px;
-}
-
-.title {
 	margin: 0;
 	padding: 0;
-	@include font($fontHeading, normal, normal, 3rem);
-	text-align: center;
-	color: $violet;
-}
+	display: grid;
+	grid-template-columns: repeat(2, calc(50% - 0.5px));
+	grid-template-rows: repeat(2, calc(50vh - 0.5px));
+	grid-template-areas:
+		"header websites"
+		"social bio";
+	grid-column-gap: 1px;
+	grid-row-gap: 1px;
+	background-color: $lightgray;
 
-.description {
-	margin: 1em 0;
-	padding: 0;
-	@include font($fontDefault, normal, normal, 1rem);
-	line-height: 1.5;
-}
+	@media only screen and (max-width: 480px) {
+		display: block;
 
-.heading {
-	margin: 2em 0 1em;
-	padding: 0;
-	@include font($fontDefault, bold, normal, 1.25rem);
-	//text-align: center;
-	text-transform: uppercase;
-	color: $brown;
+		#header {
+			margin-bottom: 1px;
+		}
+
+		.item:not(last-of-type) {
+			margin-bottom: 1px;
+		}
+	}
 }
 
 a {
-	border-bottom: $brown 1px solid;
-	text-decoration: none;
-	color: $violet;
+	color: $asparagus;
+	transition: all 300ms linear;
+
+	&:hover, &:focus {
+		color: $rosequartz;
+	}
 }
 
-.links {
-	margin: 1em 0;
-	padding: 0;
-	line-height: 1.5;
+#header {
+	margin: 0;
+	padding: 50px;
+	grid-area: header;
+	background-color: $white;
 }
 
-.links__list {
+#site-name {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	@include font($fontHeading, normal, normal, 6rem);
+
+	@media only screen and (max-width: 768px) {
+		font-size: 4rem;
+	}
+
+}
+
+#site-description {
+	margin: 1em 0 0;
+	padding: 0;
+	@include font($fontDefault, normal, normal, 1.5rem);
+}
+
+#bio {
+	grid-area: bio;
+
+	p {
+		width: 75%;
+
+		@media only screen and (max-width: 480px) {
+			width: 100%;
+		}
+	}
+
+	a {
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+		color: $rosequartz;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 0 0.25em;
+			padding: 0;
+			height: 0.5em;
+			background-color: rgba($asparagus, 0.5);
+			transition: all 300ms linear;
+		}
+
+		&:hover, &:focus {
+			color: $asparagus;
+
+			&:before {
+				background-color: rgba($rosequartz, 0.5);
+			}
+		}
+	}
+}
+
+#websites {
+	grid-area: websites;
+}
+
+#social {
+	grid-area: social;
+	text-align: right;
+}
+
+.item {
+	position: relative;
+	margin: 0;
+	padding: 25px;
+	background-color: $white;
+	line-height: 2;
+
+	nav > ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	nav a {
+		display: inline;
+		padding: 5px;
+		background-color: $asparagus;
+		text-decoration: none;
+		color: $white;
+		transition: all 300ms linear;
+
+		&:hover, &:focus {
+			background-color: $rosequartz;
+		}
+	}
+}
+
+.heading {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	margin: 25px;
+	padding: 0;
+	//transform: rotate(90deg);
+	//transform-origin: 0% 0%;
+	//transform-style: preserve-3d;
+	text-align: center;
+	line-height: 1;
+
+	#social & {
+		left: 0;
+		right: auto;
+	}
+}
+
+#blank1 {
+	grid-area: box4;
+	background: url('../images/8.png') repeat;
+}
+
+#blank2 {
+	grid-area: box5;
+	background: url('../images/10.png') repeat;
 }
