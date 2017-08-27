@@ -53,6 +53,10 @@ a {
 	padding: 50px;
 	grid-area: header;
 	background-color: $white;
+
+	@media only screen and (max-width: 480px) {
+		padding: 50px 5%;
+	}
 }
 
 #site-name {
@@ -62,6 +66,14 @@ a {
 
 	@media only screen and (max-width: 768px) {
 		font-size: 4rem;
+	}
+
+	@media only screen and (max-width: 480px) {
+		text-align: center;
+	}
+
+	@media only screen and (max-width: 479px) {
+		font-size: 3rem;
 	}
 
 }
@@ -147,6 +159,10 @@ a {
 			background-color: $rosequartz;
 		}
 	}
+
+	@media only screen and (max-width: 480px) {
+		padding: 25px 5%;
+	}
 }
 
 .heading {
@@ -156,9 +172,6 @@ a {
 	right: 0;
 	margin: 25px;
 	padding: 0;
-	//transform: rotate(90deg);
-	//transform-origin: 0% 0%;
-	//transform-style: preserve-3d;
 	text-align: center;
 	line-height: 1;
 
@@ -166,14 +179,14 @@ a {
 		left: 0;
 		right: auto;
 	}
-}
 
-#blank1 {
-	grid-area: box4;
-	background: url('../images/8.png') repeat;
-}
+	@media only screen and (max-width: 480px) {
+		position: relative;
+		float: right;
+		margin: 0;
 
-#blank2 {
-	grid-area: box5;
-	background: url('../images/10.png') repeat;
+		#social & {
+			float: left;
+		}
+	}
 }
