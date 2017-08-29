@@ -39,12 +39,22 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, calc(50% - 0.5px));
+  /*grid-template-columns: repeat(2, calc(50% - 0.5px));
   grid-template-rows: repeat(2, calc(50vh - 0.5px));
-  grid-template-areas: "header websites" "social bio";
+  grid-template-areas:
+  	"header websites"
+  	"social bio";*/
+  grid-template-columns: repeat(3, calc( (100% / 3) - 1px ));
+  /* calc since there's only 1px column gap that appears */
+  grid-template-rows: repeat(2, calc(50vh - 0.5px));
+  grid-template-areas: "header header websites" "social bio bio";
   grid-column-gap: 1px;
   grid-row-gap: 1px;
   background-color: #DDD; }
+  @media only screen and (max-width: 1023px) {
+    body {
+      grid-template-columns: repeat(2, calc(50% - 0.5px));
+      grid-template-areas: "header websites" "social bio"; } }
   @media only screen and (max-width: 480px) {
     body {
       display: block; }
