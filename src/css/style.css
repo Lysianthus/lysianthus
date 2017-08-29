@@ -172,4 +172,10 @@ a {
       #social .heading {
         float: left; } }
 
+.mobile {
+  display: none; }
+  @media only screen and (max-width: 480px) {
+    .mobile {
+      display: block; } }
+
 /*# sourceMappingURL=style.css.map */
