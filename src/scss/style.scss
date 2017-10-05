@@ -108,6 +108,7 @@ a {
 		text-decoration: none;
 		color: $rosequartz;
 
+		
 		&:before {
 			content: '';
 			display: block;
@@ -129,6 +130,8 @@ a {
 				background-color: rgba($rosequartz, 0.5);
 			}
 		}
+		
+	
 	}
 }
 
