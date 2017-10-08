@@ -1,4 +1,6 @@
-@import "_crayon.scss";
+// Metadata
+
+// Fonts
 
 @font-face {
 	font-family: 'Agent';
@@ -7,45 +9,15 @@
 	src: url('../fonts/Agent.woff') format('woff');
 }
 
-@font-face {
-	font-family: 'Mononoki';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../fonts/mononoki-Regular.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Mononoki';
-	font-weight: bold;
-	font-style: normal;
-	src: url('../fonts/mononoki-Bold.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Mononoki';
-	font-weight: normal;
-	font-style: italic;
-	src: url('../fonts/mononoki-Italic.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Mononoki';
-	font-weight: bold;
-	font-style: italic;
-	src: url('../fonts/mononoki-BoldItalic.woff') format('woff');
-}
-
-// Fonts
-
-$fontDefault: 'Mononoki', serif;
-$fontHeading: 'Agent', sans-serif;
+$fontDefault: 'Work Sans', serif;
+$fontHeading: 'Agent', cursive;
 
 
 // Colors
 
 
 
-$gray: #999;
+$gray: #666;
 $lightgray: #DDD;
 
 $white: #FFF;

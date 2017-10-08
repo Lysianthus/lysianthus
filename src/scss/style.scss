@@ -1,5 +1,16 @@
 @import "_config.scss";
 
+/* animations */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 
 /* reset */
 
@@ -10,193 +21,240 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	@include font($fontDefault, normal, normal, 1rem);
+}
+
+html {
+	font-family: $fontDefault;
+	color: $gray;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(3, calc( (100% / 3) - 0.5px )); /* 0.5 since there's only 1px column gap that appears */
-	grid-template-rows: repeat(2, calc(50vh - 0.5px));
-	grid-template-areas:
-		"header header websites"
-		"social bio bio";
-	grid-column-gap: 1px;
-	grid-row-gap: 1px;
-	background-color: $lightgray;
+	animation: fadeIn 1s ease-in-out;
+}
 
-	@media only screen and (max-width: 1023px) {
-		grid-template-columns: repeat(2, calc(50% - 0.5px));
-		grid-template-areas:
-			"header websites"
-			"social bio";
-	}
+h2 {
+	@include font($fontDefault, bold, normal, 1em);
+	text-transform: uppercase;
 
-	@media only screen and (max-width: 480px) {
-		display: block;
-
-		#header {
-			margin-bottom: 1px;
-		}
-
-		.item:not(last-of-type) {
-			margin-bottom: 1px;
-		}
+	span {
+		border-bottom: 5px solid $lightgray;
 	}
 }
 
 a {
-	color: $asparagus;
-	transition: all 300ms linear;
-
-	&:hover, &:focus {
-		color: $rosequartz;
-	}
+	text-decoration: none;
+	color: $black;
 }
+
+
+/* header */
 
 #header {
 	margin: 0;
-	padding: 50px;
-	grid-area: header;
-	background-color: $white;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	grid-template-areas:
+		"photo1 site-name photo2";
+	border-bottom: 1px solid $lightgray;
 
 	@media only screen and (max-width: 480px) {
-		padding: 50px 5%;
+		display: block;
+		border-bottom: none;
 	}
 }
 
 #site-name {
 	margin: 0;
-	padding: 0;
-	@include font($fontHeading, normal, normal, 6rem);
+	padding: 50px 5%;
+	grid-area: site-name;
+	align-self: center;
+	@include font($fontHeading, normal, normal, 5rem);
+	text-align: center;
+	color: $black;
 
 	@media only screen and (max-width: 768px) {
 		font-size: 4rem;
 	}
 
 	@media only screen and (max-width: 480px) {
-		text-align: center;
-	}
-
-	@media only screen and (max-width: 479px) {
 		font-size: 3rem;
 	}
-
 }
 
-#site-description {
-	margin: 1em 0 0;
+.photo {
+	margin: 0;
 	padding: 0;
-	@include font($fontDefault, normal, normal, 1.5rem);
+	height: 300px;
+	background-size: cover;
+
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
+
+	&.mobile {
+		width: 100%;
+	}
+}
+
+.photo1 {
+	grid-area: photo1; //Photo by Scott Webb on Unsplash
+	background: url('https://source.unsplash.com/6Rs76hNbIWE/500x375') center no-repeat;
+}
+
+.photo2 {
+	grid-area: photo2; //Photo by Sarah Dorweiler
+	background: url('https://source.unsplash.com/m2J105CzEAU/500x375') center no-repeat;
+}
+
+
+/* content */
+
+#content {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-template-areas:
+		"bio websites";
+
+	@media only screen and (max-width: 480px) {
+		display: block;
+	}
 }
 
 #bio {
+	margin: 0;
+	padding: 50px 5%;
 	grid-area: bio;
+	@include font($fontDefault, normal, normal, 2rem);
+	line-height: 1.5;
 
-	p {
-		width: 75%;
+	a {
+		border-bottom: 2px solid darken($lightgray, 10%);
+		transition: all 300ms linear;
 
-		@media only screen and (max-width: 480px) {
-			width: 100%;
+		&:hover, &:focus {
+			border-color: $black;
 		}
 	}
 
-	a {
-		position: relative;
-		display: inline-block;
-		text-decoration: none;
-		color: $rosequartz;
+	@media only screen and (max-width: 480px) {
+		border-bottom: 1px solid $lightgray;
+	}
+}
 
-		&:before {
-			content: '';
+#websites {
+	margin: 0;
+	padding: 50px 5%;
+	grid-area: websites;
+	font-size: 1.25rem;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			position: relative;
+			margin: 0 0 1em;
+			padding: 0 0 0.5em;
 			display: block;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			margin: 0 0 0.25em;
-			padding: 0;
-			height: 0.5em;
-			background-color: rgba($asparagus, 0.5);
-			transition: all 300ms linear;
-		}
-
-		&:hover, &:focus {
-			color: $asparagus;
 
 			&:before {
-				background-color: rgba($rosequartz, 0.5);
+				content: '';
+				display: block;
+				margin: 0 auto;
+				padding: 0;
+				position: absolute;
+				bottom: 0;
+				background-color: $lightgray;
+				width: 10px;
+				height: 1px;
+				transition: all 300ms ease-in-out;
+			}
+
+			&:hover, &:focus {
+
+				&:before {
+					width: 50%;
+				}
 			}
 		}
 	}
 }
 
-#websites {
-	grid-area: websites;
-}
+
+/* social */
 
 #social {
-	grid-area: social;
-	text-align: right;
-}
-
-.item {
-	position: relative;
 	margin: 0;
-	padding: 25px;
-	background-color: $white;
+	padding: 50px 5%;
+	border-top: 1px solid $lightgray;
 	line-height: 2;
 
-	nav > ul {
+	ul {
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		text-align: center;
+
+		li {
+			margin: 0 25px;
+			padding: 0;
+			display: inline-block;
+		}
 	}
 
-	nav a {
-		display: inline;
-		padding: 5px;
-		background-color: $asparagus;
-		text-decoration: none;
-		color: $white;
-		transition: all 300ms linear;
+	a {
+		position: relative;
+		display: block;
+		color: $black;
+
+		&:before {
+			content: '';
+			display: block;
+			margin: 0 auto;
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			left: calc(50% - 7px);
+			width: 14px;
+			height: 10px;
+			background-color: $lightgray;
+			border-radius: 50%;
+			transform: skew(10deg, -20deg);
+			opacity: 0;
+			transition: all 300ms ease-in-out;
+
+			@media only screen and (max-width: 480px) {
+				left: 1em;
+			}
+		}
 
 		&:hover, &:focus {
-			background-color: $rosequartz;
+			&:before {
+				opacity: 1;
+			}
 		}
 	}
 
 	@media only screen and (max-width: 480px) {
-		padding: 25px 5%;
-	}
-}
+		font-size: 1.25rem;
 
-.heading {
-	position: absolute;
-	z-index: 2;
-	top: 0;
-	right: 0;
-	margin: 25px;
-	padding: 0;
-	text-align: center;
-	line-height: 1;
+		ul {
+			text-align: left;
 
-	#social & {
-		left: 0;
-		right: auto;
-	}
-
-	@media only screen and (max-width: 480px) {
-		position: relative;
-		float: right;
-		margin: 0;
-
-		#social & {
-			float: left;
+			li {
+				margin: 0;
+				display: block;
+			}
 		}
 	}
 }
+
+
+/* more */
 
 .mobile {
 	display: none;
@@ -204,4 +262,16 @@ a {
 	@media only screen and (max-width: 480px) {
 		display: block;
 	}
+}
+
+.no-mobile {
+	display: block;
+
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
+}
+
+.credits {
+	font-size: 0.8rem;
 }

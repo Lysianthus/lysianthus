@@ -3,184 +3,209 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Agent.woff") format("woff"); }
-@font-face {
-  font-family: 'Mononoki';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/mononoki-Regular.woff") format("woff"); }
-@font-face {
-  font-family: 'Mononoki';
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/mononoki-Bold.woff") format("woff"); }
-@font-face {
-  font-family: 'Mononoki';
-  font-weight: normal;
-  font-style: italic;
-  src: url("../fonts/mononoki-Italic.woff") format("woff"); }
-@font-face {
-  font-family: 'Mononoki';
-  font-weight: bold;
-  font-style: italic;
-  src: url("../fonts/mononoki-BoldItalic.woff") format("woff"); }
+/* animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 /* reset */
 *, *:before, *:after {
   box-sizing: border-box; }
 
 html, body {
   margin: 0;
-  padding: 0;
-  font-family: "Mononoki", serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1rem; }
+  padding: 0; }
+
+html {
+  font-family: "Work Sans", serif;
+  color: #666; }
 
 body {
+  animation: fadeIn 1s ease-in-out; }
+
+h2 {
+  font-family: "Work Sans", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1em;
+  text-transform: uppercase; }
+  h2 span {
+    border-bottom: 5px solid #DDD; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+/* header */
+#header {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, calc( (100% / 3) - 0.5px ));
-  /* 0.5 since there's only 1px column gap that appears */
-  grid-template-rows: repeat(2, calc(50vh - 0.5px));
-  grid-template-areas: "header header websites" "social bio bio";
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
-  background-color: #DDD; }
-  @media only screen and (max-width: 1023px) {
-    body {
-      grid-template-columns: repeat(2, calc(50% - 0.5px));
-      grid-template-areas: "header websites" "social bio"; } }
-  @media only screen and (max-width: 480px) {
-    body {
-      display: block; }
-      body #header {
-        margin-bottom: 1px; }
-      body .item:not(last-of-type) {
-        margin-bottom: 1px; } }
-
-a {
-  color: #87a96b;
-  transition: all 300ms linear; }
-  a:hover, a:focus {
-    color: #bd559c; }
-
-#header {
-  margin: 0;
-  padding: 50px;
-  grid-area: header;
-  background-color: #FFF; }
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "photo1 site-name photo2";
+  border-bottom: 1px solid #DDD; }
   @media only screen and (max-width: 480px) {
     #header {
-      padding: 50px 5%; } }
+      display: block;
+      border-bottom: none; } }
 
 #site-name {
   margin: 0;
-  padding: 0;
-  font-family: "Agent", sans-serif;
+  padding: 50px 5%;
+  grid-area: site-name;
+  align-self: center;
+  font-family: "Agent", cursive;
   font-weight: normal;
   font-style: normal;
-  font-size: 6rem; }
+  font-size: 5rem;
+  text-align: center;
+  color: #000; }
   @media only screen and (max-width: 768px) {
     #site-name {
       font-size: 4rem; } }
   @media only screen and (max-width: 480px) {
     #site-name {
-      text-align: center; } }
-  @media only screen and (max-width: 479px) {
-    #site-name {
       font-size: 3rem; } }
 
-#site-description {
-  margin: 1em 0 0;
+.photo {
+  margin: 0;
   padding: 0;
-  font-family: "Mononoki", serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5rem; }
+  height: 300px;
+  background-size: cover; }
+  @media only screen and (max-width: 480px) {
+    .photo {
+      display: none; } }
+  .photo.mobile {
+    width: 100%; }
+
+.photo1 {
+  grid-area: photo1;
+  background: url("https://source.unsplash.com/6Rs76hNbIWE/500x375") center no-repeat; }
+
+.photo2 {
+  grid-area: photo2;
+  background: url("https://source.unsplash.com/m2J105CzEAU/500x375") center no-repeat; }
+
+/* content */
+#content {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: "bio websites"; }
+  @media only screen and (max-width: 480px) {
+    #content {
+      display: block; } }
 
 #bio {
-  grid-area: bio; }
-  #bio p {
-    width: 75%; }
-    @media only screen and (max-width: 480px) {
-      #bio p {
-        width: 100%; } }
+  margin: 0;
+  padding: 50px 5%;
+  grid-area: bio;
+  font-family: "Work Sans", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.5; }
   #bio a {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    color: #bd559c; }
-    #bio a:before {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: 0 0 0.25em;
-      padding: 0;
-      height: 0.5em;
-      background-color: rgba(135, 169, 107, 0.5);
-      transition: all 300ms linear; }
+    border-bottom: 2px solid #c4c4c4;
+    transition: all 300ms linear; }
     #bio a:hover, #bio a:focus {
-      color: #87a96b; }
-      #bio a:hover:before, #bio a:focus:before {
-        background-color: rgba(189, 85, 156, 0.5); }
+      border-color: #000; }
+  @media only screen and (max-width: 480px) {
+    #bio {
+      border-bottom: 1px solid #DDD; } }
 
 #websites {
-  grid-area: websites; }
-
-#social {
-  grid-area: social;
-  text-align: right; }
-
-.item {
-  position: relative;
   margin: 0;
-  padding: 25px;
-  background-color: #FFF;
-  line-height: 2; }
-  .item nav > ul {
+  padding: 50px 5%;
+  grid-area: websites;
+  font-size: 1.25rem; }
+  #websites ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-  .item nav a {
-    display: inline;
-    padding: 5px;
-    background-color: #87a96b;
-    text-decoration: none;
-    color: #FFF;
-    transition: all 300ms linear; }
-    .item nav a:hover, .item nav a:focus {
-      background-color: #bd559c; }
-  @media only screen and (max-width: 480px) {
-    .item {
-      padding: 25px 5%; } }
-
-.heading {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  margin: 25px;
-  padding: 0;
-  text-align: center;
-  line-height: 1; }
-  #social .heading {
-    left: 0;
-    right: auto; }
-  @media only screen and (max-width: 480px) {
-    .heading {
+    #websites ul li {
       position: relative;
-      float: right;
-      margin: 0; }
-      #social .heading {
-        float: left; } }
+      margin: 0 0 1em;
+      padding: 0 0 0.5em;
+      display: block; }
+      #websites ul li:before {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        background-color: #DDD;
+        width: 10px;
+        height: 1px;
+        transition: all 300ms ease-in-out; }
+      #websites ul li:hover:before, #websites ul li:focus:before {
+        width: 50%; }
 
+/* social */
+#social {
+  margin: 0;
+  padding: 50px 5%;
+  border-top: 1px solid #DDD;
+  line-height: 2; }
+  #social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+    #social ul li {
+      margin: 0 25px;
+      padding: 0;
+      display: inline-block; }
+  #social a {
+    position: relative;
+    display: block;
+    color: #000; }
+    #social a:before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 7px);
+      width: 14px;
+      height: 10px;
+      background-color: #DDD;
+      border-radius: 50%;
+      transform: skew(10deg, -20deg);
+      opacity: 0;
+      transition: all 300ms ease-in-out; }
+      @media only screen and (max-width: 480px) {
+        #social a:before {
+          left: 1em; } }
+    #social a:hover:before, #social a:focus:before {
+      opacity: 1; }
+  @media only screen and (max-width: 480px) {
+    #social {
+      font-size: 1.25rem; }
+      #social ul {
+        text-align: left; }
+        #social ul li {
+          margin: 0;
+          display: block; } }
+
+/* more */
 .mobile {
   display: none; }
   @media only screen and (max-width: 480px) {
     .mobile {
       display: block; } }
+
+.no-mobile {
+  display: block; }
+  @media only screen and (max-width: 480px) {
+    .no-mobile {
+      display: none; } }
+
+.credits {
+  font-size: 0.8rem; }
 
 /*# sourceMappingURL=style.css.map */
