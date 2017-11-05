@@ -33,7 +33,16 @@
 	<!-- endbuild -->
 </head>
 
-<body>
+<body class="is-loading">
+	<div id="preloader">
+		<div class="sk-folding-cube">
+			<div class="sk-cube1 sk-cube"></div>
+			<div class="sk-cube2 sk-cube"></div>
+			<div class="sk-cube4 sk-cube"></div>
+			<div class="sk-cube3 sk-cube"></div>
+		</div>
+	</div> <!-- #preloader -->
+
 	<header id="header">
 		<div class="photo photo1"></div>
 		<h1 id="site-name">Lysianthus</h1>
@@ -80,7 +89,10 @@
 
 	<div class="photo mobile photo2"></div>
 
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<!-- build:js js/lysianthus.js -->
+	<script src="js/scripts.js"></script>
 	<script src="js/statcounter.js"></script>
 	<script src="js/google-analytics.js"></script>
 	<!-- endbuild -->

@@ -1,4 +1,5 @@
 @import "_config.scss";
+@import "_preloader.scss";
 
 /* animations */
 
@@ -274,4 +275,21 @@ a {
 
 .credits {
 	font-size: 0.8rem;
+}
+
+
+/* preloader */
+
+#preloader {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.is-loading {
+	overflow: hidden;
 }
