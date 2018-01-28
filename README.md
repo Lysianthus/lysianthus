@@ -14,7 +14,7 @@ Lysianthus is Lysianthus’s personal homepage.
 
 Enable Apache `rewrite_module`.
 
-### Local
+### Development
 
 * Node.js 4.2+
 * npm 3.3+
