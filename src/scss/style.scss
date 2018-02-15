@@ -102,11 +102,19 @@ a {
 .photo1 {
 	grid-area: photo1; //Photo by Scott Webb on Unsplash
 	background: url('https://source.unsplash.com/6Rs76hNbIWE/500x375') center no-repeat;
+
+	@media only screen and (min-width: 1921px) {
+		background: url('https://source.unsplash.com/6Rs76hNbIWE/800x600') center no-repeat;
+	}
 }
 
 .photo2 {
 	grid-area: photo2; //Photo by Sarah Dorweiler
 	background: url('https://source.unsplash.com/m2J105CzEAU/500x375') center no-repeat;
+
+	@media only screen and (min-width: 1921px) {
+		background: url('https://source.unsplash.com/m2J105CzEAU/800x600') center no-repeat;
+	}
 }
 
 
