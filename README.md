@@ -1,8 +1,8 @@
 # Lysianthus
 
-Lysianthus is Lysianthus’s personal homepage.
+🐱✨🎉 and is Lysianthus’s personal homepage.
 
-[Live](https://lysianth.us)
+[Live](https://meowandsparkle.party)
 
 ## Environment
 
