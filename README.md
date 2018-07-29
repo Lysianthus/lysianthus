@@ -2,7 +2,7 @@
 
 🐱✨🎉 and is Lysianthus’s personal homepage.
 
-[Live](https://meowandsparkle.party)
+[Live](https://lysianth.us)
 
 ## Environment
 
