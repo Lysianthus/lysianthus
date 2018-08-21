@@ -1,21 +1,11 @@
 # Lysianthus
 
-🐱✨🎉 and is Lysianthus’s personal homepage.
-
-[Live](https://lysianth.us)
+[Lysianthus](https://lysianth.us) and is my personal homepage.
 
 ## Environment
 
-### Server
-
-* Apache 2.2+
-* PHP 5.6+
-* MySQL 5.5+
-
-Enable Apache `rewrite_module`.
-
 ### Development
 
-* Node.js 4.2+
-* npm 3.3+
-* Sass 3.4+
+* Node.js 8.11+
+* npm 6.4+
+* Sass 1.13+
