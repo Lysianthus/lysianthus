@@ -1,6 +1,6 @@
 # Lysianthus
 
-[Lysianthus](https://lysianth.us) and is my personal homepage.
+[Lysianthus](https://lysianth.us) is my personal homepage.
 
 ## Environment
 
