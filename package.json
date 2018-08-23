@@ -1,0 +1,26 @@
+{
+	"2038": {
+		"app": "./app.js"
+	},
+	"name": "Lysianthus",
+	"author": {
+		"name": "Lysianthus",
+		"email": "lysianthus@protonmail.ch",
+		"url": "https://lysianth.us"
+	},
+	"version": "1.0.0",
+	"description": "Lysianthus is a personal homepage.",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Lysianthus",
+	"license": "MIT",
+	"dependencies": {
+		"express" : "^4.16.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Lysianthus/lysianthus"
+	}
+}
