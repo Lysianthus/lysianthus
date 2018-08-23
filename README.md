@@ -6,6 +6,8 @@
 
 ### Server
 
+This is a static website, so it can be served anywhere.
+
 * Node.js 8.11+
 
 ### Development
