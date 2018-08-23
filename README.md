@@ -4,6 +4,10 @@
 
 ## Environment
 
+## Server
+
+* Node.js 8.11+
+
 ### Development
 
 * Node.js 8.11+
