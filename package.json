@@ -1,7 +1,4 @@
 {
-	"2038": {
-		"app": "./app.js"
-	},
 	"name": "Lysianthus",
 	"author": {
 		"name": "Lysianthus",
