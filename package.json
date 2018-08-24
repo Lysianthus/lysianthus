@@ -17,6 +17,21 @@
 	"dependencies": {
 		"express" : "^4.16.3"
 	},
+	"devDependencies": {
+		"cssbeautify": "^0.3.1",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^5.0.0",
+		"gulp-clean-css": "^3.10.0",
+		"gulp-cssbeautify": "^1.0.0",
+		"gulp-if": "^2.0.2",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-rev": "^8.1.1",
+		"gulp-twig": "^1.2.0",
+		"gulp-uglify": "^3.0.1",
+		"gulp-useref": "^3.1.5",
+		"imagemin-pngquant": "^6.0.0"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Lysianthus/lysianthus"
