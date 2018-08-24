@@ -6,4 +6,5 @@ app.get('/', function (request, response){
 	response.sendFile(__dirname + '/dist/index.html');
 });
 
-app.listen(3000);
+var port = process.env.PORT || 8080;
+app.listen(port);
