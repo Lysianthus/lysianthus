@@ -3,20 +3,22 @@
 // Fonts
 
 @font-face {
-	font-family: 'Agent';
+	font-family: 'Brownhill Script';
 	font-weight: normal;
 	font-style: normal;
-	src: url('../fonts/Agent.woff') format('woff');
+	src: url('../fonts/Brownhill-Script.woff') format('woff');
 }
 
-$fontDefault: 'Work Sans', serif;
-$fontHeading: 'Agent', cursive;
+$fontDefault: 'Work Sans', sans-serif;
+$fontHeading: 'Brownhill Script', cursive;
 
 
 // Colors
 
-$gray: #666;
-$lightgray: #DDD;
+$transwhite: rgba(255,255,255,0.5);
+
+$gray: #999;
+$bggray: #DDD;
 
 $white: #FFF;
 $black: #000;
