@@ -127,6 +127,9 @@ html, body {
   font-size: 0;
   line-height: 1.75;
   animation: morphIn 500ms ease-in-out forwards; }
+  @media only screen and (max-width: 799px) {
+    .container {
+      margin-bottom: 218px; } }
 
 .text-container {
   position: relative;
@@ -154,6 +157,9 @@ html, body {
   @media only screen and (max-width: 800px) {
     .text-container {
       font-size: 1.25rem; } }
+  @media only screen and (max-width: 425px) {
+    .text-container {
+      font-size: 1rem; } }
 
 .links-list--grid {
   margin: 0;

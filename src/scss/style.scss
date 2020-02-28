@@ -158,6 +158,10 @@ html, body {
 	line-height: 1.75;
 
 	animation: morphIn 500ms ease-in-out forwards;
+
+	@media only screen and (max-width: 799px) {
+		margin-bottom: 218px; // height of .main-menu * 2 + 100px
+	}
 }
 
 .text-container {
@@ -189,6 +193,10 @@ html, body {
 
 	@media only screen and (max-width: 800px) {
 		font-size: 1.25rem;
+	}
+
+	@media only screen and (max-width: 425px) {
+		font-size: 1rem;
 	}
 }
 
