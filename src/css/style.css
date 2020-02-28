@@ -6,12 +6,16 @@
 /* variables */
 :root {
   --container-width: 800px;
-  --container-halfwidth: -400px; }
+  --container-halfwidth: -400px;
+  --logo-size: 350px;
+  --logo-halfsize: -175px; }
 
 @media only screen and (max-width: 800px) {
   :root {
     --container-width: 90%;
-    --container-halfwidth: -45%; } }
+    --container-halfwidth: -45%;
+    --logo-size: calc(0.8 * 350px);
+    --logo-halfsize: calc(var(--logo-size) / -2); } }
 /* reset */
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -39,8 +43,8 @@ html, body {
   position: relative;
   margin: 0 auto;
   padding: 25px 0;
-  width: 350px;
-  height: 350px;
+  width: var(--logo-size);
+  height: var(--logo-size);
   background-color: #FFF;
   border-radius: 100%; }
   .logo:after {
@@ -58,7 +62,7 @@ html, body {
 .wreath {
   margin: 0 auto;
   padding: 0;
-  min-height: 300px;
+  min-height: calc(var(--logo-size) - 50px);
   background: url("../images/wreath.png") center no-repeat;
   background-size: contain;
   display: flex;
@@ -128,7 +132,7 @@ html, body {
   position: relative;
   margin: 0;
   padding: 50px 25px;
-  min-height: 350px;
+  min-height: var(--logo-size);
   background: url("../images/editor.png") #fefefe no-repeat;
   background-position: 10px 10px;
   font-size: 1.5rem;
@@ -147,6 +151,9 @@ html, body {
       animation: changeColor 300ms linear infinite;
       text-shadow: -3px 3px 0 #676767, 3px -3px 0 #676767;
       filter: blur(1px); }
+  @media only screen and (max-width: 800px) {
+    .text-container {
+      font-size: 1.25rem; } }
 
 .links-list--grid {
   margin: 0;
@@ -173,32 +180,32 @@ html, body {
 @keyframes morphIn {
   /* specific to .container only */
   0% {
-    margin: 0 0 0 -175px;
-    width: 350px;
-    height: 350px;
+    margin: 0 0 0 var(--logo-halfsize);
+    width: var(--logo-size);
+    height: var(--logo-size);
     min-height: 0;
     border-radius: 100%; }
   100% {
     margin: 0 0 0 var(--container-halfwidth);
     width: var(--container-width);
     height: auto;
-    min-height: 350px;
+    min-height: var(--logo-size);
     border-radius: 0%; } }
 @keyframes morphOut {
   0% {
     margin: 0 0 0 var(--container-halfwidth);
     width: var(--container-width);
     height: auto;
-    min-height: 350px;
+    min-height: var(--logo-size);
     border-radius: 0%; }
   25% {
-    margin: 0 0 0 -175px;
-    width: 350px;
-    height: 350px; }
+    margin: 0 0 0 var(--logo-halfsize);
+    width: var(--logo-size);
+    height: var(--logo-size); }
   100% {
-    margin: 0 0 0 -175px;
-    width: 350px;
-    height: 350px;
+    margin: 0 0 0 var(--logo-halfsize);
+    width: var(--logo-size);
+    height: var(--logo-size);
     min-height: 0;
     border-radius: 100%; } }
 @keyframes fadeOut {
