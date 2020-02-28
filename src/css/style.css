@@ -35,7 +35,7 @@ html, body {
   bottom: 0;
   left: 0;
   margin: 0;
-  padding: 50px 5% 0;
+  padding: 50px 5%;
   background: url("../images/pattern.png") #ffe4cd repeat;
   background-attachment: fixed; }
 
@@ -119,9 +119,12 @@ html, body {
 .container {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 50px;
   left: 50%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 168px;
   padding: 0;
   background-color: #fefefe;
   font-size: 0;
@@ -186,30 +189,30 @@ html, body {
 @keyframes morphIn {
   /* specific to .container only */
   0% {
-    margin: 0 0 0 var(--logo-halfsize);
+    margin-left: var(--logo-halfsize);
     width: var(--logo-size);
     height: var(--logo-size);
     min-height: 0;
     border-radius: 100%; }
   100% {
-    margin: 0 0 0 var(--container-halfwidth);
+    margin-left: var(--container-halfwidth);
     width: var(--container-width);
     height: auto;
     min-height: var(--logo-size);
     border-radius: 0%; } }
 @keyframes morphOut {
   0% {
-    margin: 0 0 0 var(--container-halfwidth);
+    margin-left: var(--container-halfwidth);
     width: var(--container-width);
     height: auto;
     min-height: var(--logo-size);
     border-radius: 0%; }
   25% {
-    margin: 0 0 0 var(--logo-halfsize);
+    margin-left: var(--logo-halfsize);
     width: var(--logo-size);
     height: var(--logo-size); }
   100% {
-    margin: 0 0 0 var(--logo-halfsize);
+    margin-left: var(--logo-halfsize);
     width: var(--logo-size);
     height: var(--logo-size);
     min-height: 0;
@@ -258,8 +261,8 @@ html, body {
 
 /* color selector */
 .color-selector {
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  z-index: 4;
   top: 20px;
   right: 20px;
   margin: 0;
