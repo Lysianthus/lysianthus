@@ -1,6 +1,21 @@
 @import "_crayon.scss";
 @import "_config.scss";
 
+/* variables */
+
+:root {
+	--container-width: 800px;
+	--container-halfwidth: -400px; // must be negative
+}
+
+@media only screen and (max-width: 800px) {
+	:root {
+		--container-width: 90%;
+		--container-halfwidth: -45%; // must be negative
+	}
+}
+
+
 /* reset */
 
 *, *:before, *:after {
@@ -211,8 +226,8 @@ html, body {
 	}
 
 	100% {
-		margin: 0 0 0 -400px;
-		width: 800px;
+		margin: 0 0 0 var(--container-halfwidth);
+		width: var(--container-width);
 		height: auto;
 		min-height: 350px;
 		border-radius: 0%;
@@ -222,8 +237,8 @@ html, body {
 @keyframes morphOut {
 	0% {
 		// copied from morphIn 100%, to declare initial state
-		margin: 0 0 0 -400px;
-		width: 800px;
+		margin: 0 0 0 var(--container-halfwidth);
+		width: var(--container-width);
 		height: auto;
 		min-height: 350px;
 		border-radius: 0%;

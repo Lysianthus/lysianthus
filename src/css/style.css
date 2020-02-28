@@ -3,6 +3,15 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Brownhill-Script.woff") format("woff"); }
+/* variables */
+:root {
+  --container-width: 800px;
+  --container-halfwidth: -400px; }
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --container-width: 90%;
+    --container-halfwidth: -45%; } }
 /* reset */
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -170,15 +179,15 @@ html, body {
     min-height: 0;
     border-radius: 100%; }
   100% {
-    margin: 0 0 0 -400px;
-    width: 800px;
+    margin: 0 0 0 var(--container-halfwidth);
+    width: var(--container-width);
     height: auto;
     min-height: 350px;
     border-radius: 0%; } }
 @keyframes morphOut {
   0% {
-    margin: 0 0 0 -400px;
-    width: 800px;
+    margin: 0 0 0 var(--container-halfwidth);
+    width: var(--container-width);
     height: auto;
     min-height: 350px;
     border-radius: 0%; }
