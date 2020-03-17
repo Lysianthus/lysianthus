@@ -114,6 +114,9 @@ html, body {
         transition: all 300ms linear; }
         .main-menu ul li a:hover, .main-menu ul li a:focus {
           color: #c0448f; }
+        @media only screen and (max-width: 425px) {
+          .main-menu ul li a {
+            font-size: 0.8rem; } }
 
 /* containers */
 .container {
