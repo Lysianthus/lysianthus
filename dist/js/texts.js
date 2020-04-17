@@ -25,6 +25,6 @@ var texts = [
 	{
 		"title": "Contact",
 		"content" : `
-			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:lysianthus@pm.me">lysianthus@pm.me</a>. I’m also on Discord as Lysianthus#9473. I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>`
+			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:she@lysianth.us">she@lysianth.us</a>. I’m also on Discord as Lysianthus#9473. I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>`
 	}
 ];
