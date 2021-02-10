@@ -10,8 +10,8 @@ var texts = [
 		"content" : `
 			<p>Some <i>personal projects</i> I have or am working on:</p>
 			<ul>
-				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (comprehensive projects archive)</li>
 				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository)</li>
+				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (umbrella network / projects archive)</li>
 				<li><a target="_blank" href="https://papercarvings.lysianth.us">Paper Carvings</a> (personal blog)</li>
 				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a> (personal storage box)</li>
@@ -26,6 +26,6 @@ var texts = [
 	{
 		"title" : "Contact",
 		"content" : `
-			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:she@lysianth.us">she@lysianth.us</a>. I’m also on Discord as Lysianthus#9473. I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>`
+			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:she@lysianth.us">she@lysianth.us</a> (<a href="/she@lysianth.us.asc">PGP key</a>). I’m also on Discord as Lysianthus#9473. I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>`
 	}
 ];
