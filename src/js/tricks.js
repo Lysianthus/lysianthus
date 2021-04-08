@@ -2,17 +2,19 @@ var containerIsOpen = false;
 
 function closeContainer() {
 
-	if (containerIsOpen == true) {	
+	if (containerIsOpen == true) {
+		// closing animation
 		document.getElementById('container').classList.add('morphOut');
 		document.getElementById('text-container').classList.add('delayTextOut');
 		document.getElementById('text-container').innerHTML = '';
 		containerIsOpen = false;
 
+		// reset to default values after 500ms delay
 		setTimeout(function(){
 			document.getElementById('container').style.display = "none";
 			document.getElementById('container').classList.remove('morphOut');
 			document.getElementById('text-container').classList.remove('delayTextOut');
-		}, 500); // ms it takes to complete animations
+		}, 500); // ms it takes to complete closing animation
 	}
 
 }
@@ -20,12 +22,21 @@ function closeContainer() {
 function openContainer(textId) {
 	
 	if (containerIsOpen == false) {
+		// opening animation
 		document.getElementById('container').style.display = "block";
 		document.getElementById('text-container').innerHTML = texts[textId].content + '<span class="typer"></span>';
 		containerIsOpen = true;
 
-	} else {
+	} else if (containerIsOpen == true) {
+		// closing animation first
 		closeContainer();
+
+		// opening animation
+		setTimeout(function() {
+			document.getElementById('container').style.display = "block";
+			document.getElementById('text-container').innerHTML = texts[textId].content + '<span class="typer"></span>';
+			containerIsOpen = true;
+		}, 550); // ms it takes to complete closing animation + 50ms rest
 	}
 
 }
