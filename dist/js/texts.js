@@ -6,9 +6,9 @@ var texts = [
 			<p>Hi, I’m <i>Lysianthus</i>! I really like <i>milk</i>, <i>cats</i>, <i>whales</i>, and <i>websites</i>. 🎈 Aspiring materials engineer at 0700, pseudo-psychologist at 1400, hobbyist web developer and sysadmin at 2000, fangirl at 0000, and <i>learner forever</i>. 🐙</p>`
 	},
 	{
-		"title" : "Projects",
+		"title" : "Domains",
 		"content" : `
-			<p>Some <i>personal projects</i> I have or am working on:</p>
+			<p>Some <i>personal domains</i> I have:</p>
 			<ul>
 				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository)</li>
 				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (umbrella network / projects archive)</li>
