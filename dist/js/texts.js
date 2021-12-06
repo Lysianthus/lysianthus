@@ -15,7 +15,7 @@ var texts = [
 				<li><a target="_blank" href="https://papercarvings.lysianth.us">Paper Carvings</a> (personal blog)</li>
 				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a> (personal storage box)</li>
-				<li><a target="_blank" href="https://haliya.net">Haliya</a> (personal media CDN)</li>
+				<li><a target="_blank" href="https://haliya.net">Haliya</a> (Plex media server)</li>
 			</ul>`
 	},
 	{
