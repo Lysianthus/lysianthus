@@ -11,7 +11,7 @@ var texts = [
 			<p>Some <i>personal domains</i> I have:</p>
 			<ul>
 				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository)</li>
-				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (personal &amp; fan projects)</li>
+				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (personal &amp; fan projects umbrella)</li>
 				<li><a target="_blank" href="https://papercarvings.lysianth.us">Paper Carvings</a> (personal blog)</li>
 				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a> (personal storage box)</li>
