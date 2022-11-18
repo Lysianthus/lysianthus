@@ -1,0 +1,5 @@
+---
+deployment:
+    tasks:
+        - export DEPLOYPATH=/home/lysianthus/public_html/test/
+        - /bin/cp index.html $DEPLOYPATH
