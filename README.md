@@ -8,8 +8,8 @@
 
 This is a static website, so it can be served anywhere.
 
-* [Live on a Node.js server](https://lysianthus.herokuapp.com)
 * [Live on a LiteSpeed server](https://lysianth.us)
+* [Live on Cloudflare pages](https://lysianthus.pages.dev)
 
 ### Development
 
