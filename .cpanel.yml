@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/meowands/public_html/meow-git-test
-    - /bin/cp -R /home/meowands/repositories/lysianthus/dist $DEPLOYPATH
+    - /bin/cp -RT /home/meowands/repositories/lysianthus/dist $DEPLOYPATH
