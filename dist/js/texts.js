@@ -2,7 +2,7 @@ var texts = [
 	{
 		"title" : "About",
 		"content" : `
-			<p>she/her · 9w1 954 sp/so · true neutral · PH</p>
+			<p>she/her · 9w1 · true neutral · PH</p>
 			<p>Hi, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🎈 Aspiring engineer at 0700, pseudo-psychologist at 1400, hobbyist web developer and sysadmin at 2000, fangirl at 0000, and <i>learner forever</i>. 🐙</p>`
 	},
 	{
