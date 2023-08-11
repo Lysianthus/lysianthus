@@ -14,9 +14,10 @@ var texts = [
 				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (personal &amp; fan projects umbrella)</li>
 				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
 				<li><a target="_blank" href="https://hi.lysianth.us">hi.lysianth.us</a> (private fediverse instance)</li>
-				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a> (personal storage box)</li>
-				<li><a target="_blank" href="https://haliya.net">Haliya</a> (Plex media server)</li>
-				<li><a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a> (blank)</li>
+				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a></li>
+				<li><a target="_blank" href="https://haliya.net">Haliya</a></li>
+				<li><a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a></li>
+				<li><a target="_blank" href="https://ocean.pink">Ocean</a></li>
 			</ul>`
 	},
 	{
