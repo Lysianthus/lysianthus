@@ -11,9 +11,9 @@ var texts = [
 			<p>Some <i>personal domains</i> I have:</p>
 			<ul>
 				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository)</li>
-				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (personal &amp; fan projects umbrella)</li>
+				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (umbrella network)</li>
 				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
-				<li><a target="_blank" href="https://hi.lysianth.us">hi.lysianth.us</a> (private fediverse instance)</li>
+				<li><a target="_blank" href="https://hi.lysianth.us">hi.lysianth.us</a> (private Mastodon instance)</li>
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a></li>
 				<li><a target="_blank" href="https://haliya.net">Haliya</a></li>
 				<li><a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a></li>
@@ -23,7 +23,7 @@ var texts = [
 	{
 		"title" : "Social",
 		"content" : `
-			<p>I <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot</a>, <a target="_blank" title="Twitter" href="https://twitter.com/lysianthus">tweet</a>, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic</a> when the <i>mood</i> strikes, <a target="_blank" title="Github" href="https://github.com/Lysianthus">code</a> for personal <i>entertainment</i>, and am trying to improve at <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess</a>. ⭐</p>`
+			<p>I regularly <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot</a>, rarely <a target="_blank" title="Twitter" href="https://twitter.com/lysianthus">tweet</a> these days, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic</a> when the <i>mood</i> strikes, <a target="_blank" title="Github" href="https://github.com/Lysianthus">code</a> for personal <i>entertainment</i>, and am trying to improve at <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess</a>. ⭐</p>`
 	},
 	{
 		"title" : "Contact",
