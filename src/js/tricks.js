@@ -41,13 +41,19 @@ function openContainer(textId) {
 
 }
 
-function setBgColor(bgColor) {
-	document.getElementById('header').style.backgroundColor = bgColor;
-}
-
 document.getElementById('header').addEventListener('click', function(event) {
 	if (containerIsOpen == true) {
 		if (event.target.closest('#container')) return;
 		closeContainer();
 	}
 });
+
+if (localStorage.getItem("bgColor")) {
+	var currentBgColor = localStorage.getItem("bgColor");
+	document.getElementById('header').style.backgroundColor = currentBgColor;
+}
+
+function setBgColor(bgColor) {
+	document.getElementById('header').style.backgroundColor = bgColor;
+	localStorage.setItem("bgColor", bgColor);
+}
