@@ -12,8 +12,9 @@ var texts = [
 			<ul>
 				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository)</li>
 				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (umbrella network)</li>
-				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
 				<li><a target="_blank" href="https://lysianth.us">Lysianthus</a> (personal homepage)</li>
+				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
+				<li><a target="_blank" href="https://papercarvings.lysianth.us">Paper Carvings</a> (personal blog)</li>
 				<li><a target="_blank" href="https://hi.lysianth.us">hi.lysianth.us</a> (private Mastodon instance)</li>
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a></li>
 				<li><a target="_blank" href="https://haliya.net">Haliya</a></li>
