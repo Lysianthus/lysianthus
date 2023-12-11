@@ -16,6 +16,9 @@ var texts = [
 				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
 				<li><a target="_blank" href="https://papercarvings.lysianth.us">Paper Carvings</a> (personal blog)</li>
 				<li><a target="_blank" href="https://hi.lysianth.us">hi.lysianth.us</a> (private Mastodon instance)</li>
+			</ul>
+			<p>And <i>some more</i> that I don’t have a use for yet:</p>
+			<ul>
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a></li>
 				<li><a target="_blank" href="https://haliya.net">Haliya</a></li>
 				<li><a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a></li>
