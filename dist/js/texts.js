@@ -33,6 +33,6 @@ var texts = [
 	{
 		"title" : "Contact",
 		"content" : `
-			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:she@lysianth.us">she@lysianth.us</a> (<a href="/she@lysianth.us.asc">PGP key</a>). I’m also on Discord as @lysianthus. I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>`
+			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:she@lysianth.us">she@lysianth.us</a> (<a href="/she@lysianth.us.asc">PGP key</a>). <!-- I’m also on Discord as @lysianthus. -->I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>`
 	}
 ];
