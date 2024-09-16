@@ -28,7 +28,7 @@ var texts = [
 	{
 		"title" : "Social",
 		"content" : `
-			<p>I regularly <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot</a>, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic</a> when the <i>mood</i> strikes, <a target="_blank" title="GitHub" href="https://github.com/Lysianthus">code</a> for personal <i>entertainment</i>, and <i>casually</i> play <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess</a>. ⭐</p>`
+			<p>I <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot</a> sometimes, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic</a> when the <i>mood</i> strikes, <a target="_blank" title="GitHub" href="https://github.com/Lysianthus">code</a> for personal <i>entertainment</i>, and <i>casually</i> play <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess</a>. ⭐</p>`
 	},
 	{
 		"title" : "Contact",
