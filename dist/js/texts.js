@@ -3,7 +3,7 @@ var texts = [
 		"title" : "About",
 		"content" : `
 			<p>she/her · 9w1 · true neutral · PH</p>
-			<p>Hi, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🎈 Aspiring engineer at 0700, pseudo-psychologist at 1400, hobbyist web developer and sysadmin at 2000, fangirl at 0000, and <i>learner forever</i>. 🐙</p>`
+			<p>Hi, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🎈 Aspiring scientist at 0700, pseudo-psychologist at 1400, hobbyist web developer and sysadmin at 2000, fangirl at 0000, and <i>learner forever</i>. 🐙</p>`
 	},
 	{
 		"title" : "Domains",
@@ -22,7 +22,7 @@ var texts = [
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a></li>
 				<li><a target="_blank" href="https://haliya.net">Haliya</a></li>
 				<li><a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a></li>
-				<li><a target="_blank" href="https://ocean.pink">Ocean</a></li>
+				<li><a target="_blank" href="https://ocean.pink">Ocean</a> (my soon-to-be everything/nothing website!)</li>
 			</ul>`
 	},
 	{
