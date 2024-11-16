@@ -10,7 +10,7 @@ var texts = [
 		"content" : `
 			<p>Some <i>personal domains</i> I have:</p>
 			<ul>
-				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository)</li>
+				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository | archived)</li>
 				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (umbrella network)</li>
 				<li><a target="_blank" href="https://lysianth.us">Lysianthus</a> (personal homepage)</li>
 				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
