@@ -28,12 +28,12 @@ var texts = [
 	{
 		"title" : "Social",
 		"content" : `
-			<p>I <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot</a> sometimes, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic</a> when the <i>mood</i> strikes, <a target="_blank" title="GitHub" href="https://github.com/Lysianthus">code</a> for personal <i>entertainment</i>, and <i>casually</i> play <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess</a>. ⭐</p>
-			<div id="fandomring"><script type="text/javascript" src="https://fandomr.ing/onionring/onionring-variables.js"></script><script type="text/javascript" src="https://fandomr.ing/onionring/onionring-widget.js"></script></div>`
+			<p>I <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot</a> sometimes, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic</a> when the <i>mood</i> strikes, <a target="_blank" title="GitHub" href="https://github.com/Lysianthus">code</a> for personal <i>entertainment</i>, and <i>casually</i> play <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess</a>. ⭐</p>`
 	},
 	{
-		"title" : "Contact",
+		"title" : "Et cetera",
 		"content" : `
-			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:she@lysianth.us">she@lysianth.us</a> (<a href="/she@lysianth.us.asc">PGP key</a>). <!-- I’m also on Discord as @lysianthus. -->I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>`
+			<p>You can say <i>hello</i> at <a target="_blank" href="mailto:she@lysianth.us">she@lysianth.us</a> (<a href="/she@lysianth.us.asc">PGP key</a>). <!-- I’m also on Discord as @lysianthus. -->I’m nice, I promise (<i>I think</i>). (◡‿◡✿)</p>
+			<iframe id="webrings" src="/webrings.html" style="display: block; margin: -1em auto -2em; padding: 0; width: 100%; border: none;"></iframe>`
 	}
 ];

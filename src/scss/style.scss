@@ -158,7 +158,8 @@ html, body {
 	left: 50%;
 	margin-top: 0;
 	margin-right: 0;
-	margin-bottom: 168px; // height of .main-menu * 2 + 50px
+	// margin-bottom: 168px; // height of .main-menu * 2 + 50px
+	margin-bottom: 200px;
 	padding: 0;
 	background-color: $coconut;
 	font-size: 0;
@@ -167,7 +168,8 @@ html, body {
 	animation: morphIn 500ms ease-in-out forwards;
 
 	@media only screen and (max-width: 799px) {
-		margin-bottom: 218px; // height of .main-menu * 2 + 100px 
+		// margin-bottom: 218px; // height of .main-menu * 2 + 100px 
+		margin-bottom: 250px;
 	}
 }
 
@@ -350,7 +352,7 @@ html, body {
 .color-selector {
 	position: fixed;
 	z-index: 4;
-	top: 20px;
+	top: 4px;
 	right: 20px;
 	margin: 0;
 	padding: 0;

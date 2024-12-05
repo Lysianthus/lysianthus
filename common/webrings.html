@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Lysianthus · 🐱✨🎉</title>
+
+	<link rel="stylesheet" href="https://fandomr.ing/onionring/onionring.css" />
+
+	<style>
+		@font-face {
+			font-family: 'OsakaMono';
+			font-weight: normal;
+			font-style: normal;
+			src: url('fonts/OsakaMono.woff') format('woff');
+		}
+
+		*, *:before, *:after {
+			box-sizing: border-box;
+		}
+
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 'OsakaMono', monospace;
+			font-size: 1rem;
+		}
+
+		/* copied from parent css */
+		a {
+			text-decoration-color: #87a96b;
+			color: #6f2da8;
+			transition: all 300ms linear;
+		}
+
+		a:hover, a:focus {
+			animation: changeColor 300ms linear infinite;
+			text-shadow: -3px 3px 0 #676767, 3px -3px 0 #676767;
+			filter: blur(1px);
+		}
+
+		@keyframes changeColor {
+			0% {
+				color: #f03865;
+			}
+			25% {
+				color: #bd8260;
+			}
+			50% {
+				color: #5fa778;
+			}
+			75% {
+				color: #1ca9c9;
+			}
+			100% {
+				color: #5f8a8b;
+			}
+		}
+	</style>
+
+	<base target="_parent" />
+</head>
+
+<body>
+	<!-- fandom ring -->
+	<div id="fandomring">
+		<script type="text/javascript" src="https://fandomr.ing/onionring/onionring-variables.js"></script>
+		<script type="text/javascript" src="https://fandomr.ing/onionring/onionring-widget.js"></script>
+	</div>
+</body>
+
+</html>
