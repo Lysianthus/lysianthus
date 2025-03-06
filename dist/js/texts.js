@@ -22,7 +22,7 @@ var texts = [
 				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a></li>
 				<li><a target="_blank" href="https://haliya.net">Haliya</a></li>
 				<li><a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a></li>
-				<li><a target="_blank" href="https://ocean.pink">Ocean</a> (my soon-to-be everything/nothing website!)</li>
+				<li><a target="_blank" href="https://ocean.pink">Ocean</a> (<small>🚧 under construction</small>)</li>
 			</ul>`
 	},
 	{
