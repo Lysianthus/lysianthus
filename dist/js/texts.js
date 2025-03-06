@@ -3,7 +3,7 @@ var texts = [
 		"title" : "About",
 		"content" : `
 			<p>she/her · 9w1 · true neutral · PH</p>
-			<p>Hi, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🎈 Aspiring scientist at 0700, lost zombie at 1400, hobbyist web developer and sysadmin at 2100, fangirl at 0200, and <i>learner forever</i>. 🐙</p>`
+			<p>Hello, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🪷 Asleep at 0600, lost zombie at 1400, hobbyist and dilettante at 2100, fangirl at 0000, and <i>learner forever</i>. 🐙</p>`
 	},
 	{
 		"title" : "Domains",
