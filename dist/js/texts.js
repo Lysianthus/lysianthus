@@ -9,21 +9,21 @@ var texts = [
 		"title" : "Domains",
 		"content" : `
 			<p>Some <i>personal domains</i> I have:</p>
-			<ul>
-				<li><a target="_blank" href="https://affeli.us">Affelius</a> (creative repository <small>| ⚠️ old</small>)</li>
-				<li><a target="_blank" href="https://asclaria.org">Asclaria</a> (umbrella network <small>| ⚠️ needs updating</small>)</li>
-				<li><a target="_blank" href="https://lysianth.us">Lysianthus</a> (personal homepage)</li>
-				<li><a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)</li>
-				<li><a target="_blank" href="https://papercarvings.lysianth.us">Paper Carvings</a> (personal blog)</li>
-				<li><a target="_blank" href="https://hi.lysianth.us">hi.lysianth.us</a> (private Mastodon instance)</li>
-			</ul>
+			<p>
+				🪻 <a target="_blank" href="https://affeli.us">Affelius</a> (creative repository <small>| ⚠️ old</small>)<br />
+				🪻 <a target="_blank" href="https://asclaria.org">Asclaria</a> (umbrella network <small>| ⚠️ needs updating</small>)<br />
+				🪻 <a target="_blank" href="https://lysianth.us">Lysianthus</a> (personal homepage)<br />
+				🪻 <a target="_blank" href="https://leprd.space">Leprd</a> (free web hosting)<br />
+				🪻 <a target="_blank" href="https://papercarvings.lysianth.us">Paper Carvings</a> (personal blog)<br />
+				🪻 <a target="_blank" href="https://hi.lysianth.us">hi.lysianth.us</a> (private Mastodon instance)
+			</p>
 			<p>And <i>some more</i> that I don’t have a use for yet:</p>
-			<ul>
-				<li><a target="_blank" href="https://bouvardia.blue">Bouvardia</a></li>
-				<li><a target="_blank" href="https://haliya.net">Haliya</a></li>
-				<li><a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a></li>
-				<li><a target="_blank" href="https://ocean.pink">Ocean</a> (<small>🚧 under construction</small>)</li>
-			</ul>`
+			<p>
+				🌱 <a target="_blank" href="https://ocean.pink">Ocean</a> (<small>🚧 under construction</small>) <br />
+				🌱 <a target="_blank" href="https://bouvardia.blue">Bouvardia</a><br />
+				🌱 <a target="_blank" href="https://haliya.net">Haliya</a><br />
+				🌱 <a target="_blank" href="https://meowandsparkle.party">Meow &amp; Sparkle Party</a>
+			</p>`
 	},
 	{
 		"title" : "Social",
