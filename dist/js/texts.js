@@ -3,7 +3,7 @@ var texts = [
 		"title" : "About",
 		"content" : `
 			<p>she/her · 9w1 · true neutral · 🇵🇭</p>
-			<p>Hello, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🪷 Asleep at 0600, lost zombie at 1400, hobbyist and dilettante at 2100, fangirl at 0000, and <i>learner forever</i>. 🐙</p>`
+			<p>Hello, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🪷 By day a <i>linguist</i>, by night a <i>hobbyist</i>, in between an <i>enthusiast</i> of many things, and a <i>learner forever</i>. 🐙 Nice to meet you!</p>`
 	},
 	{
 		"title" : "Domains",
