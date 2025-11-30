@@ -2,7 +2,7 @@ var texts = [
 	{
 		"title" : "About",
 		"content" : `
-			<p>she/her · 9w1 · true neutral · 🇵🇭</p>
+			<p>/ˌlɪz.iˈæn.θəs/ · she/her · 9w1 · true neutral · 🇵🇭</p>
 			<p>Hello, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🪷 By day a <i>linguist</i>, by night a <i>hobbyist</i>, in between an <i>enthusiast</i> of many things, and a <i>learner forever</i>. 🐙 Nice to meet you!</p>`
 	},
 	{
@@ -28,7 +28,7 @@ var texts = [
 	{
 		"title" : "Social",
 		"content" : `
-			<p>I <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot</a> sometimes, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic</a> when the <i>mood</i> strikes, <a target="_blank" title="GitHub" href="https://github.com/Lysianthus">code</a> for personal <i>entertainment</i>, and <i>casually</i> play <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess</a>. ⭐</p>`
+			<p>I <a target="_blank" title="Mastodon" href="https://hi.lysianth.us/@lysianthus">toot ↗</a> sometimes, am always <a target="_blank" title="Goodreads" href="https://www.goodreads.com/lysianthus">reading ↗</a> <i>something</i>, watch <a target="_blank" title="Letterboxd" href="https://letterboxd.com/Lysianthus/">movies ↗</a> and <a target="_blank" title="AniList" href="https://anilist.co/user/driedfish/">anime ↗</a> as an <i>escape</i>, write <a target="_blank" title="Archive of Our Own" href="https://archiveofourown.org/users/aretaic">fanfic ↗</a> when the <i>mood</i> strikes, <a target="_blank" title="GitHub" href="https://github.com/Lysianthus">code ↗</a> for personal <i>entertainment</i>, and <i>casually</i> play <a target="_blank" title="Lichess" href="https://lichess.org/@/lysianthus">chess ↗</a>. ⭐</p>`
 	},
 	{
 		"title" : "Et cetera",
