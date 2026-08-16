@@ -2,7 +2,7 @@ var texts = [
 	{
 		"title" : "About",
 		"content" : `
-			<p>/ˌlɪz.iˈæn.θəs/ · she/her · enneagram 9 · true neutral · 🇵🇭</p>
+			<p>/ˌlɪz.iˈæn.θəs/ · she/her · enneagram 9 · true neutral · 📍 🇵🇭</p>
 			<p>Hello, I’m <i>Lysianthus</i>! I really like <i>URLs</i> and <i>personal websites</i>. 🪷 By day a <i>linguist</i>, by night a <i>hobbyist</i>, in between an <i>enthusiast</i> of many things, and a <i>learner forever</i>. 🐙 Nice to meet you!</p>`
 	},
 	{
